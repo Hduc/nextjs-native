@@ -16,7 +16,7 @@ import Register from '../screens/Register';
 // import Name from '../screens/Name';
 // import Address from '../screens/Address';
 // import Room from '../screens/Room';
-import Home from '../screens/Home';
+import Home from '../screens/';
 // import SearchR from '../screens/SearchR';
 // import ActiveD from '../screens/ActiveD';
 // import Otp from '../screens/Otp';

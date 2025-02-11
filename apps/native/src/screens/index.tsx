@@ -53,6 +53,12 @@ export default function Home() {
                                 <Text style={[style.m12, { color: Colors.secondary, marginBottom: 15 }]}>kwh</Text>
                                 <Text style={[style.b12, { color: Colors.secondary }]}>Usage</Text>
                             </View>
+                             <View style={{ backgroundColor: Colors.orange,flex: 1, marginHorizontal: 12, borderRadius: 24, paddingVertical: 20, alignItems: 'center' }}>
+                                <Image source={require('../../assets/image/a19.png')} resizeMode='stretch' style={{ height: 20, width: 20 }}></Image>
+                                <Text style={[style.title, { color: Colors.secondary, marginTop: 15 }]}>312</Text>
+                                <Text style={[style.m12, { color: Colors.secondary, marginBottom: 15 }]}>kwh</Text>
+                                <Text style={[style.b12, { color: Colors.secondary }]}>Usage</Text>
+                            </View>
                         </View>
 
                         <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 30 }}>
