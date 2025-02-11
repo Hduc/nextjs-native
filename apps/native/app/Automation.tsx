@@ -30,7 +30,7 @@ export default function Automation() {
                             <Text style={[style.m12, { color: Colors.active }]}>Tebet</Text>
                             <Icon name='caret-down' size={20} color={Colors.active} style={{ marginLeft: 20 }} />
                         </View>}
-                        leading={<Avatar.Image source={require('../assets/image/a45.png')} size={60} style={{ backgroundColor: Colors.secondary }} />}
+                        leading={<Avatar.Image source={require('../assets/image/s4.png')} size={60} style={{ backgroundColor: Colors.secondary }} />}
                         trailing={<TouchableOpacity onPress={() => router.replace('Condition')} style={[style.icon2]} >
                             <Icon name='add' size={20} color={Colors.secondary} />
                         </TouchableOpacity>}
