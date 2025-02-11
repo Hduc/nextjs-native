@@ -1,12 +1,10 @@
-import { View, Text, SafeAreaView, Dimensions, ImageBackground, TouchableOpacity, TextInput, Image, ScrollView, StatusBar, KeyboardAvoidingView, Switch, Platform } from 'react-native'
-import React, { useState, useContext } from 'react'
+import { View, Text, SafeAreaView, Dimensions, TouchableOpacity, TextInput, Image, ScrollView, KeyboardAvoidingView, Platform } from 'react-native'
+import React, { useState } from 'react'
 import { AppBar } from '@react-native-material/core';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Colors } from '../theme/color';
-import { Avatar } from 'react-native-paper';
 import style from '../theme/style';
 import { useNavigation } from '@react-navigation/native';
-import Icons from 'react-native-vector-icons/MaterialCommunityIcons'
 import CheckBox from '@react-native-community/checkbox';
 
 const width = Dimensions.get('screen').width

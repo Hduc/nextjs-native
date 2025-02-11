@@ -11,40 +11,39 @@ import Introduction from '../screens/Introduction';
 import Login1 from '../screens/Login1';
 import LFinger from '../screens/LFinger';
 import Register from '../screens/Register';
-// import RSuccess from '../screens/RSuccess';
-// import Country from '../screens/Country';
-// import Name from '../screens/Name';
-// import Address from '../screens/Address';
-// import Room from '../screens/Room';
-import Home from '../screens/';
-// import SearchR from '../screens/SearchR';
-// import ActiveD from '../screens/ActiveD';
-// import Otp from '../screens/Otp';
-// import Setting from '../screens/Setting';
+import RSuccess from '../screens/RSuccess';
+import Country from '../screens/Country';
+import Name from '../screens/Name';
+import Address from '../screens/Address';
+import Room from '../screens/Room';
+import SearchR from '../screens/SearchR';
+import ActiveD from '../screens/ActiveD';
+import Otp from '../screens/Otp';
+import Setting from '../screens/Setting';
 import VAssis from '../screens/VAssis';
-// import Profile from '../screens/Profile';
-// import Report from '../screens/Report';
+import Profile from '../screens/Profile';
+import Report from '../screens/Report';
 import Condition from '../screens/Condition';
-// import SC1 from '../screens/SC1';
+import SC1 from '../screens/SC1';
 import MHome from '../screens/MHome';
 import HomeD from '../screens/HomeD';
-// import EditAddress from '../screens/EditAddress';
-// import InviteM from '../screens/InviteM';
-// import AddDevice from '../screens/AddDevice';
-// import ADSearch from '../screens/ADSearch';
-// import ADSecurity from '../screens/ADSecurity';
-// import ADLink from '../screens/ADLink';
-// import ADLocation from '../screens/ADLocation';
-// import SC2 from '../screens/SC2';
-// import Automation from '../screens/Automation';
-// import AutoLog from '../screens/AutoLog';
-// import RoomD from '../screens/RoomD';
-// import RoomE from '../screens/RoomE';
-// import Scan from '../screens/Scan';
-// import Scan1 from '../screens/Scan1';
-// import Scan2 from '../screens/Scan2';
+import EditAddress from '../screens/EditAddress';
+import InviteM from '../screens/InviteM';
+import AddDevice from '../screens/AddDevice';
+import ADSearch from '../screens/ADSearch';
+import ADSecurity from '../screens/ADSecurity';
+import ADLink from '../screens/ADLink';
+import ADLocation from '../screens/ADLocation';
+import SC2 from '../screens/SC2';
+import Automation from '../screens/Automation';
+import AutoLog from '../screens/AutoLog';
+import RoomD from '../screens/RoomD';
+import RoomE from '../screens/RoomE';
+import Scan from '../screens/Scan';
+import Scan1 from '../screens/Scan1';
+import Scan2 from '../screens/Scan2';
 import MyTabs from './BottomNavigator';
-// import Home from '../screens';
+import Home from '../screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -85,7 +84,6 @@ export default function StackNavigator() {
           name="Home"
           component={Home}
           options={{ headerShown: false }} />
-        {/*           
           <Stack.Screen
           name="ADLocation"
           component={ADLocation}
@@ -152,13 +150,6 @@ export default function StackNavigator() {
           name="EditAddress"
           component={EditAddress}
           options={{ headerShown: false }} />
-
-        
-
-        
-
-      
-
         <Stack.Screen
           name="ActiveD"
           component={ActiveD}
@@ -214,7 +205,6 @@ export default function StackNavigator() {
           name="RSuccess"
           component={RSuccess}
           options={{ headerShown: false }} />
-*/}
 <Stack.Screen
           name="HomeD"
           component={HomeD}

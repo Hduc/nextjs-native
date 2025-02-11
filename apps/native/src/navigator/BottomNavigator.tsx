@@ -1,11 +1,7 @@
-import React, { useContext, useState } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import React, {  } from 'react';
+import { Text, Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-// import Home from '../screens/Home';
-import Ionicons from "react-native-vector-icons/Ionicons"
-import Icons from 'react-native-vector-icons/MaterialCommunityIcons'
 import { Colors } from '../theme/color';
-import Icon from 'react-native-vector-icons/FontAwesome5'
 import Home from '../screens';
 import Automation from '../screens/Automation';
 import Setting from '../screens/Setting';
