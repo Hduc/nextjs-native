@@ -7,4 +7,5 @@ export { Accordion, type AccordionProps } from "./Accordion/Accordion";
 
 //Input
 
-export { CustomInput, type CustomInputProps } from './Input/CustomInput' 
+export { CustomInput, type CustomInputProps } from './Input/CustomInput'
+export { ToggleStyle1 } from './Toggles/ToggleStyle1'
