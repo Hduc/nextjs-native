@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { TouchableOpacity, View } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
-import { COLORS } from '../../constants/theme';
+import { COLORS } from '../@Interface/Style';
 
-const ToggleStyle4 = () => {
+export const ToggleStyle4 = () => {
     
     const {colors} = useTheme();
 
@@ -51,7 +51,7 @@ const ToggleStyle4 = () => {
                         backgroundColor: active ? COLORS.primary : colors.card,
                         borderRadius:30,
                         borderWidth:1,
-                        borderColor:active ? COLORS.primary : colors.borderColor,
+                        borderColor:active ? COLORS.primary : colors.border,
                         top:-5,
                         left:-2,
                         shadowColor: "rgba(0,0,0,.6)",

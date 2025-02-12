@@ -3,9 +3,9 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
-import { COLORS, FONTS, SIZES } from '../../constants/theme';
+import { COLORS, FONTS, SIZES } from '../@Interface/Style';
 
-const ToggleStyle3 = (props) => {
+const ToggleStyle3 = () => {
     
     const {colors} = useTheme();
 

@@ -7,7 +7,7 @@ import {
     ScrollView,
 } from 'react-native';
 
-import { FONTS, COLORS, IMAGES } from '../../constants/theme';
+import { FONTS, COLORS, IMAGES } from '../@Interface/Style';
 import { useNavigation, useTheme } from '@react-navigation/native';
 import Ripple from 'react-native-material-ripple';
 

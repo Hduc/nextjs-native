@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Ripple from 'react-native-material-ripple';
-import { FONTS, SIZES, COLORS, IMAGES } from '../../constants/theme';
+import { FONTS, SIZES, COLORS, IMAGES } from '../@Interface/Style';
 import Swiper from 'react-native-swiper';
 import {
     LineChart,

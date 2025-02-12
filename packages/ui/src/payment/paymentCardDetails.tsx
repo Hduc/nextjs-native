@@ -10,10 +10,9 @@ import {
 } from 'react-native';
 
 import { useTheme } from '@react-navigation/native';
-import { FONTS, SIZES, COLORS, IMAGES, ICONS } from '../../constants/theme';
+import { FONTS, SIZES, COLORS, IMAGES, ICONS } from '../@Interface/Style';
 import Ripple from 'react-native-material-ripple';
 import RBSheet from "react-native-raw-bottom-sheet";
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 import CustomButton from '../customButton';
 import AddNewCard from '../modal/addNewCardModal';
 import { LinearGradient } from 'expo-linear-gradient';

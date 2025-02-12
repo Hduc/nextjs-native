@@ -8,8 +8,7 @@ import {
     FlatList,
 } from 'react-native';
 
-import { COLORS, FONTS, ICONS, IMAGES, SIZES } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { COLORS, FONTS, ICONS, IMAGES, SIZES } from '../@Interface/Style';
 import { useNavigation, useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import CustomButton from '../customButton';

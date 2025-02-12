@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { useTheme } from '@react-navigation/native';
-import { FONTS } from '../../constants/theme';
+import { FONTS } from '../@Interface/Style';
 
 const ListStyle1 = (props) => {
     

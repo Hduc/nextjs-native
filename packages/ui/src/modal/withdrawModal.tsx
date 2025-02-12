@@ -8,11 +8,10 @@ import {
 import RBSheet from "react-native-raw-bottom-sheet";
 import { useTheme } from '@react-navigation/native';
 import Ripple from 'react-native-material-ripple';
-import { FONTS, ICONS, SIZES } from '../../constants/theme';
+import { FONTS, ICONS, SIZES } from '../@Interface/Style';
 import WithdrawCryptoModal from './withdrawCryptoModal';
 import WithdrawCashModal from './withdrawCashModal';
 import { LinearGradient } from 'expo-linear-gradient';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 
 const WithdrawData = [
     {

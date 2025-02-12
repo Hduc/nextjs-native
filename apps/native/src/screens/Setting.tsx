@@ -7,6 +7,7 @@ import { Avatar } from 'react-native-paper'
 import { AppBar, HStack } from '@react-native-material/core';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Icons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { ToggleStyle1 } from 'hybrid-ui'
 
 const width = Dimensions.get('screen').width
 const height = Dimensions.get('screen').height
@@ -34,8 +35,11 @@ export default function Setting() {
                             style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20 }}>
                             <Avatar.Image source={require('../../assets/image/s4.png')} size={80} style={{ backgroundColor: Colors.secondary }} />
                             <View style={{ marginLeft: 10, flex: 1 }}>
-                                <Text style={[style.subtitle, { color: Colors.active }]}>George Martin</Text>
+                                <Text style={[style.subtitle, { color: Colors.active }]}>George a</Text>
                                 <Text style={[style.m12, { color: Colors.disable }]}>george123@email.com</Text>
+                                <ToggleStyle1 active={false} onToggle={()=>{}}>
+                                    
+                                </ToggleStyle1>
                             </View>
                         </TouchableOpacity>
 

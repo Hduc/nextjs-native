@@ -3,7 +3,7 @@ import {
     
 } from 'react-native';
 import { PieChart } from 'react-native-chart-kit';
-import { COLORS } from '../../constants/theme';
+import { COLORS } from '../@Interface/Style';
 
 
 const WidgetPieChart = () => {

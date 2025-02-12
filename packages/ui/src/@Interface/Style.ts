@@ -1,3 +1,4 @@
+import { Dimensions } from "react-native";
 
 
 export const COLORS = {
@@ -28,7 +29,8 @@ export const COLORS = {
     darkBorder: "#252739",
 
 }
-
+const width = Dimensions.get('screen').width
+const height = Dimensions.get('screen').height
 export const SIZES = {
     font: 14,
     fontSm: 13,
@@ -45,7 +47,8 @@ export const SIZES = {
     h5: 18,
     h6: 16,
     container: 800,
-
+    width,
+    height,
     contentArea: {
         paddingTop: 70,
         paddingBottom: 150,

@@ -4,8 +4,7 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 import MaterialIcon from "react-native-vector-icons/MaterialIcons";
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { useTheme } from '@react-navigation/native';
-import { COLORS, FONTS, SIZES } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { COLORS, FONTS, SIZES } from '../@Interface/Style';
 import Button from '../Button/Button';
 import CustomInput from '../Input/CustomInput';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useTheme } from '@react-navigation/native';
-import { COLORS, FONTS } from '../../constants/theme';
+import { COLORS, FONTS } from '../@Interface/Style';
 
 const SuccessSheet = () => {
 

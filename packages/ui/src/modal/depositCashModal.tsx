@@ -7,8 +7,7 @@ import {
     ScrollView,
 } from 'react-native';
 
-import { COLORS, FONTS, ICONS, SIZES } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { COLORS, FONTS, ICONS, SIZES } from '../@Interface/Style';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useTheme } from '@react-navigation/native';
 

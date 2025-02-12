@@ -9,11 +9,10 @@ import {
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Ripple from 'react-native-material-ripple';
-import { FONTS, SIZES, COLORS } from '../../constants/theme';
+import { FONTS, SIZES, COLORS } from '../@Interface/Style';
 import { useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 
 const FavouritesData = [
     {

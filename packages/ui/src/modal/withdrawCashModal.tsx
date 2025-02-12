@@ -7,8 +7,7 @@ import {
 
 import { useTheme } from '@react-navigation/native';
 import RBSheet from "react-native-raw-bottom-sheet";
-import { COLORS, FONTS, SIZES } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { COLORS, FONTS, SIZES } from '../@Interface/Style';
 import CustomButton from '../customButton';
 import SecurityVerification from './securityVerification';
 

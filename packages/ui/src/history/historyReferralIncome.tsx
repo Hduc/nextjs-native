@@ -10,13 +10,12 @@ import {
 } from 'react-native';
 
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import { FONTS, SIZES, COLORS, IMAGES, ICONS } from '../../constants/theme';
+import { FONTS, SIZES, COLORS, IMAGES, ICONS } from '../@Interface/Style';
 import Ripple from 'react-native-material-ripple';
 import Accordion from 'react-native-collapsible/Accordion';
 import RBSheet from "react-native-raw-bottom-sheet";
 // import DatePicker from 'react-native-date-picker';
 import { useTheme } from '@react-navigation/native';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 
 const AccordionData = [
     {

@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native';
 
-import  { COLORS, FONTS, ICONS, SIZES } from '../../constants/theme';
+import  { COLORS, FONTS, ICONS, SIZES } from '../@Interface/Style';
 
 import {
   LineChart,
@@ -16,7 +16,6 @@ import {
 import { LinearGradient } from 'expo-linear-gradient';
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 import Ripple from 'react-native-material-ripple';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 
 
 class WalletBalance extends React.Component {

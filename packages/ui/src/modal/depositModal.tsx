@@ -5,7 +5,7 @@ import {
     Image,
 } from 'react-native';
 
-import { FONTS, ICONS, SIZES } from '../../constants/theme';
+import { FONTS, ICONS, SIZES } from '../@Interface/Style';
 import Ripple from 'react-native-material-ripple';
 import { LinearGradient } from 'expo-linear-gradient';
 import DepositCryptoModal from '../../components/modal/depositCryptoModal';
@@ -13,7 +13,6 @@ import PaymentModal from '../../components/modal/paymentModal';
 import DepositCashModal from '../../components/modal/depositCashModal';
 import RBSheet from "react-native-raw-bottom-sheet";
 import { useTheme } from '@react-navigation/native';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 
 const DepositData = [
     {

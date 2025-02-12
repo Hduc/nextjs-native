@@ -15,8 +15,7 @@ import Ripple from 'react-native-material-ripple';
 import Accordion from 'react-native-collapsible/Accordion';
 import RBSheet from "react-native-raw-bottom-sheet";
 // import DatePicker from 'react-native-date-picker';
-import { FONTS, SIZES, COLORS, IMAGES, ICONS } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { FONTS, SIZES, COLORS, IMAGES, ICONS } from '../@Interface/Style';
 
 
 const AccordionData = [
