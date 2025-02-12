@@ -1,7 +1,7 @@
 import React from 'react';
 import { LineChart } from 'react-native-chart-kit';
 import { useTheme } from '@react-navigation/native';
-import { COLORS, SIZES } from '../../constants/theme';
+import { COLORS, SIZES, GlobalStyleSheet } from '../@Interface/Style';
 
 const BasicLineChart = () => {
 

@@ -1,8 +1,17 @@
 import React from 'react';
-import { TouchableOpacity } from 'react-native';
-import { COLORS, SIZES } from '../../constants/theme';
+import { ColorValue, TouchableOpacity } from 'react-native';
+import { COLORS, SIZES, GlobalStyleSheet } from '../@Interface/Style';
 
-const SocialIcon = (props) => {
+interface SocialIconProps {
+    color: ColorValue | undefined;
+    square: any;
+    rounded: any;
+    btnSm: any;
+    btnLg: any;
+    icon: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined;
+}
+
+export const SocialIcon = (props: SocialIconProps) => {
     return (
         <>
             <TouchableOpacity
@@ -28,5 +37,3 @@ const SocialIcon = (props) => {
     );
 };
 
-
-export default SocialIcon;

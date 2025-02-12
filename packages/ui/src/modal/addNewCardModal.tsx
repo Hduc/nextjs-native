@@ -8,8 +8,7 @@ import {
 
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { useTheme } from '@react-navigation/native';
-import { COLORS, FONTS } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { COLORS, FONTS } from '../@Interface/Style';
 import CustomButton from '../customButton';
 // import DatePicker from 'react-native-date-picker';
 

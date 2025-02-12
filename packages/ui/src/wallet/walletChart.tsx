@@ -7,10 +7,9 @@ import {
 } from 'react-native';
 
 import Ripple from 'react-native-material-ripple';
-import { COLORS, FONTS, SIZES } from '../../constants/theme';
+import { COLORS, FONTS, SIZES } from '../@Interface/Style';
 import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph';
 import { useTheme } from '@react-navigation/native';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 
 const chartTab = [
     

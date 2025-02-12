@@ -7,8 +7,7 @@ import {
 } from 'react-native';
 
 import { useTheme } from '@react-navigation/native';
-import { COLORS, FONTS, SIZES } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { COLORS, FONTS, SIZES } from '../@Interface/Style';
 import { LinearGradient } from 'expo-linear-gradient';
 import CustomButton from '../customButton';
 import RBSheet from "react-native-raw-bottom-sheet";

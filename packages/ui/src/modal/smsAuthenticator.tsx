@@ -5,8 +5,7 @@ import {
 } from 'react-native';
 
 import { useTheme } from '@react-navigation/native';
-import { FONTS } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { FONTS } from '../@Interface/Style';
 import CustomButton from '../customButton';
 
 const SmsAuthenticator = ({enabled}) => {

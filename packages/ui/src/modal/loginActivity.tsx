@@ -8,8 +8,7 @@ import {
 
 import { useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import { FONTS, ICONS, SIZES } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { FONTS, ICONS, SIZES } from '../@Interface/Style';
 import Ripple from 'react-native-material-ripple';
 
 

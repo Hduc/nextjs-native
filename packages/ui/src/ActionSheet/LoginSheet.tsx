@@ -17,7 +17,7 @@ const LoginSheet = () => {
                 borderColor: colors.borderColor,
                 paddingVertical: 10,
             }}>
-                <Text style={{ ...FONTS.h5, color: colors.title }}>Sign In</Text>
+                <Text style={{ ...FONTS.h5, color: COLORS.title }}>Sign In</Text>
             </View>
             <View style={GlobalStyleSheet.container}>
                 <View style={{ marginBottom: 15 }}>

@@ -1,7 +1,7 @@
 import { useTheme } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { COLORS, FONTS, IMAGES, SIZES } from '../../constants/theme';
+import { COLORS, FONTS, IMAGES, SIZES } from '../@Interface/Style';
 
 import {
     LineChart

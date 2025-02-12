@@ -141,15 +141,15 @@ const WalletConvert = (props) => {
                                         }}
                                         source={IMAGES.check}
                                     />
-                                    <Text style={{...FONTS.font,color: colors.title}}>{data.coinName}</Text>
+                                    <Text style={{...FONTS.font,color: COLORS.title}}>{data.coinName}</Text>
                                 </View>
                                 <Text style={{
                                     ...FONTS.font,
-                                    color: colors.title,
+                                    color: COLORS.title,
                                     width:'33.33%',
                                     textAlign:'center',
                                 }}>{data.avlBalance}</Text>
-                                <Text style={{...FONTS.font,color: colors.title}}>= {data.value}</Text>
+                                <Text style={{...FONTS.font,color: COLORS.title}}>= {data.value}</Text>
                             </Ripple>
                         )
                     })

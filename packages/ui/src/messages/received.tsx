@@ -1,7 +1,7 @@
 import React from 'react';
 import {View,Text,StyleSheet,Image} from 'react-native';
 
-import { COLORS, FONTS } from '../../constants/theme';
+import { COLORS, FONTS } from '../@Interface/Style';
 
 const Received = ({message,duration}) => {
     return(

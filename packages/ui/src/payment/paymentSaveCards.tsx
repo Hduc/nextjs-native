@@ -9,9 +9,8 @@ import {
 } from 'react-native';
 
 import { useTheme } from '@react-navigation/native';
-import { FONTS, SIZES, COLORS, IMAGES, ICONS } from '../../constants/theme';
+import { FONTS, SIZES, COLORS, IMAGES, ICONS } from '../@Interface/Style';
 import Ripple from 'react-native-material-ripple';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 
 
 const cardData = [

@@ -10,10 +10,9 @@ import {
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Ripple from 'react-native-material-ripple';
-import { FONTS, SIZES, COLORS, IMAGES } from '../../constants/theme';
+import { FONTS, SIZES, COLORS, IMAGES } from '../@Interface/Style';
 import { useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 
 const ListingData = [
     {

@@ -5,7 +5,6 @@ import WithdrawCryptoModal from '../../components/modal/withdrawCryptoModal';
 import RBSheet from "react-native-raw-bottom-sheet";
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import { LinearGradient } from 'expo-linear-gradient';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 import { Platform } from 'react-native';
 
 class WalletBalanceList extends React.Component {

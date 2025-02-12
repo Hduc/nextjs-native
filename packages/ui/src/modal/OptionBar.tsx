@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useTheme } from '@react-navigation/native';
-import { FONTS, SIZES } from '../../constants/theme';
+import { FONTS, SIZES } from '../@Interface/Style';
 import ButtonSm from '../Button/ButtonSm';
 
 const OptionBar = () => {

@@ -4,13 +4,11 @@ import { useTheme } from '@react-navigation/native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { COLORS } from '../@Interface/Style';
 
-
-
 interface IProps {
     active?: unknown;
     onToggle?: (arg0: boolean) => any;
 }
- 
+
 export const ToggleStyle1 = (props: IProps) => {
     
     const {colors} = useTheme();

@@ -10,9 +10,8 @@ import {
 import { LinearGradient } from 'expo-linear-gradient';
 import Ripple from 'react-native-material-ripple';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import { FONTS, SIZES, COLORS } from '../../constants/theme';
+import { FONTS, SIZES, COLORS } from '../@Interface/Style';
 import { useTheme } from '@react-navigation/native';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 
 const PairsData = [
     {

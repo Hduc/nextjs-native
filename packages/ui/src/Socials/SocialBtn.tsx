@@ -1,8 +1,16 @@
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
-import { COLORS, FONTS, SIZES } from '../../constants/theme';
+import { ColorValue, Text, TouchableOpacity, View } from 'react-native';
+import { COLORS, FONTS, SIZES } from '../@Interface/Style';
 
-const SocialBtn = (props) => {
+interface SocialBtnProps {
+    color: ColorValue | undefined;
+    rounded: any;
+    icon: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined;
+    text: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined;
+}
+
+const SocialBtn = (props: 
+    SocialBtnProps) => {
     return (
         <TouchableOpacity
             style={[{

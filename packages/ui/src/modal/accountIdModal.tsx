@@ -5,8 +5,7 @@ import {
     TextInput,
 } from 'react-native';
 import { useTheme } from '@react-navigation/native';
-import { COLORS, FONTS } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { COLORS, FONTS } from '../@Interface/Style';
 import CustomButton from '../customButton';
 
 

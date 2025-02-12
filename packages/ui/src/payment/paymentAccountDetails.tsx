@@ -9,11 +9,10 @@ import {
     TextInput,
 } from 'react-native';
 
-import { FONTS, SIZES, COLORS, ICONS } from '../../constants/theme';
+import { FONTS, SIZES, COLORS, ICONS } from '../@Interface/Style';
 import Ripple from 'react-native-material-ripple';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useTheme } from '@react-navigation/native';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 import RBSheet from "react-native-raw-bottom-sheet";
 import CustomButton from '../customButton';
 import AddNewAccount from '../modal/addNewAccountModal';

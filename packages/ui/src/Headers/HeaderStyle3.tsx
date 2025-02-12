@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { useTheme } from '@react-navigation/native';
-import { COLORS, FONTS, IMAGES, SIZES } from '../../constants/theme';
+import { COLORS, FONTS, IMAGES, SIZES } from '../@Interface/Style';
 
 const HeaderStyle3 = () => {
 

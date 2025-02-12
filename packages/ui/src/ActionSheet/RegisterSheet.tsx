@@ -3,8 +3,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import MaterialIcon from "react-native-vector-icons/MaterialIcons";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { useTheme } from '@react-navigation/native';
-import { COLORS, FONTS } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { COLORS, FONTS } from '../@Interface/Style';
 import Button from '../Button/Button';
 import CustomInput from '../Input/CustomInput';
 

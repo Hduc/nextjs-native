@@ -1,7 +1,7 @@
 import React from 'react';
 import { BarChart } from 'react-native-chart-kit';
 import { useTheme } from '@react-navigation/native';
-import { SIZES } from '../../constants/theme';
+import { SIZES } from '../@Interface/Style';
 
 const BasicBarChart = () => {
     

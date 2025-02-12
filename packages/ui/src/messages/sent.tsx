@@ -1,8 +1,7 @@
 import React from 'react';
 import {View,Text,StyleSheet} from 'react-native';
 import { useTheme } from '@react-navigation/native';
-import { FONTS } from '../../constants/theme';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
+import { FONTS } from '../@Interface/Style';
 
 const Sent = ({message,duration}) => {
 

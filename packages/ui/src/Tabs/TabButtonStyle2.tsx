@@ -1,9 +1,16 @@
-import React,{useState , useRef} from 'react';
+import React, { useState, useRef, FC } from 'react';
 import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useTheme } from '@react-navigation/native';
-import { COLORS, FONTS, SIZES } from '../../constants/theme';
+import { COLORS, FONTS, SIZES } from '../@Interface/Style';
 
-const TabButtonStyle2 = ({ buttons, onClick, scrollX }) => {
+
+interface TabButtonStyle2Props {
+    buttons: string[];
+    onClick: (index: number) => void;
+    scrollX: Animated.Value;
+}
+
+export const TabButtonStyle2: FC<TabButtonStyle2Props> = ({ buttons, onClick, scrollX }) => {
     const [btnContainerWidth, setWidth] = useState(0);
     const btnWidth = btnContainerWidth / buttons.length;
     const translateX = scrollX.interpolate({
@@ -15,18 +22,18 @@ const TabButtonStyle2 = ({ buttons, onClick, scrollX }) => {
         outputRange: [0, -btnWidth],
     });
     const { colors } = useTheme();
-    
+
     return (
         <View
-            style={{...styles.btnContainer}}
+            style={{ ...styles.btnContainer }}
             onLayout={e => setWidth(e.nativeEvent.layout.width)}>
-             
+
             {buttons.map((btn, i) => (
                 <TouchableOpacity
                     key={btn}
                     style={styles.btn}
                     onPress={() => onClick(i)}>
-                    <Text style={{...FONTS.font,...FONTS.fontMedium,color:colors.text}}>{btn}</Text>
+                    <Text style={{ ...FONTS.font, ...FONTS.fontMedium, color: colors.text }}>{btn}</Text>
                 </TouchableOpacity>
             ))}
             <Animated.View
@@ -41,16 +48,16 @@ const TabButtonStyle2 = ({ buttons, onClick, scrollX }) => {
                             styles.animatedBtn,
                             { width: btnWidth, transform: [{ translateX: translateXOpposit }] },
                         ]}>
-                        <Text style={{...FONTS.font,...FONTS.fontBold,color:COLORS.white}}>{btn}</Text>
+                        <Text style={{ ...FONTS.font, ...FONTS.fontBold, color: COLORS.white }}>{btn}</Text>
                         <View
-                          style={{
-                            height:45,
-                            width:btnWidth,
-                            backgroundColor:COLORS.primary,
-                            position:'absolute',
-                            bottom:0,
-                            zIndex:-1,
-                          }}
+                            style={{
+                                height: 45,
+                                width: btnWidth,
+                                backgroundColor: COLORS.primary,
+                                position: 'absolute',
+                                bottom: 0,
+                                zIndex: -1,
+                            }}
                         />
                     </Animated.View>
                 ))}
@@ -76,7 +83,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         position: 'absolute',
         overflow: 'hidden',
-        borderRadius:10,
+        borderRadius: 10,
     },
     animatedBtn: {
         height: 45,
@@ -88,5 +95,3 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
 })
-
-export default TabButtonStyle2;

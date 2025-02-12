@@ -8,9 +8,8 @@ import {
     TextInput,
 } from 'react-native';
 
-import { FONTS, COLORS, ICONS } from '../../constants/theme';
+import { FONTS, COLORS, ICONS } from '../@Interface/Style';
 import { useTheme } from '@react-navigation/native';
-import { GlobalStyleSheet } from '../../constants/styleSheet';
 import CustomButton from '../../components/customButton';
 
 const HelpCreateTicket = () => {

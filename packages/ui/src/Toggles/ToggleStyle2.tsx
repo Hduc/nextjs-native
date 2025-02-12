@@ -3,9 +3,9 @@ import { TouchableOpacity, View } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
-import { COLORS, SIZES } from '../../constants/theme';
+import { COLORS, SIZES, GlobalStyleSheet } from '../@Interface/Style';
 
-const ToggleStyle2 = (props) => {
+const ToggleStyle2 = () => {
     
     const {colors} = useTheme();
 
