@@ -2,65 +2,95 @@ import React, { useState } from 'react';
 import { StyleSheet, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import { FONTS, SIZES } from '../../constants/theme';
+import { FontProps } from '../@Interface/FontProps';
+import { COLORS, FONTS, SIZES } from '../@Interface/Style';
 
-const CustomInput = (props) => {
+export interface CustomInputProps {
+    type: string
+    value?: string
+    icon?: string
+    font?: FontProps
+    placeholder?: string
+    color?: string
+    borderColor?: string
+    borderRadius?: number
+    inputLg?: boolean
+    inputSm?:boolean
+    inputRounded?:boolean
+    inputBorder?:boolean
+    onChange?: () => void
+}
+export const CustomInput = ({
+    type,
+    value,
+    icon,
+    font = FONTS.font,
+    placeholder = "Vui lòng nhập",
+    color = COLORS.title,
+    borderColor = COLORS.border,
+    borderRadius = SIZES.radius,
+    inputLg,
+    inputSm,
+    inputRounded,
+    inputBorder,
+    onChange = () => { }
+}: CustomInputProps) => {
 
-    const {colors} = useTheme();
+    const { colors } = useTheme();
 
-    const [passwordShow , setPasswordShow ] = useState(true);
-    
+    const [passwordShow, setPasswordShow] = useState(true);
+
     const handndleShowPassword = () => {
         setPasswordShow(!passwordShow);
     }
-
+    const isShowIcon = icon !== undefined
     return (
         <>
-            <View style={{position:'relative',justifyContent:'center'}}>
+            <View style={{ position: 'relative', justifyContent: 'center' }}>
                 <View style={{
-                    position:'absolute',
-                    left:20,
+                    position: 'absolute',
+                    left: 20,
                     //top:16,
                 }}>
-                    {props.icon && props.icon}
+                    {icon && icon}
                 </View>
                 <TextInput
-                    secureTextEntry={props.type === "password" ? passwordShow : false}
+                    secureTextEntry={type === "password" ? passwordShow : false}
                     style={[{
-                        ...FONTS.font,
-                        fontSize:16,
-                        borderWidth:1,
-                        color:colors.title,
-                        borderColor:colors.borderColor,
-                        borderRadius:SIZES.radius,
-                        paddingVertical:12,
-                        paddingHorizontal:15,
-                    }, props.icon && {
-                        paddingLeft:50,
-                    },props.inputLg && {
-                        paddingVertical:18,
-                    },props.inputSm && {
-                        paddingVertical:7,
-                    },props.inputRounded && {
-                        borderRadius:30,
-                    },props.inputBorder && {
-                        borderWidth:0,
-                        borderBottomWidth:1,
-                        borderRadius:0,
+                        ...font,
+                        fontSize: 16,
+                        borderWidth: 1,
+                        color: color,
+                        borderColor,
+                        borderRadius,
+                        paddingVertical: 12,
+                        paddingHorizontal: 15,
+                    }, isShowIcon && {
+                        paddingLeft: 50,
+                    }, inputLg && {
+                        paddingVertical: 18,
+                    }, inputSm && {
+                        paddingVertical: 7,
+                    }, inputRounded && {
+                        borderRadius: 30,
+                    }, inputBorder && {
+                        borderWidth: 0,
+                        borderBottomWidth: 1,
+                        borderRadius: 0,
                     }]}
                     placeholderTextColor={colors.text}
-                    placeholder={props.placeholder}
-                    onChangeText={props.onChangeText}
-                    defaultValue={props.value && props.value}
+                    placeholder={placeholder}
+                    onChangeText={onChange}
+                    defaultValue={value && value}
                 />
-                {props.type === "password" &&
+                {type === "password" &&
                     <TouchableOpacity
                         accessible={true}
                         accessibilityLabel="Password"
                         accessibilityHint="Password show and hidden"
                         onPress={() => handndleShowPassword()}
                         style={styles.eyeIcon}>
-                        <FeatherIcon color={colors.text} size={18} name={passwordShow ? 'eye-off' : 'eye'}/>
+                        <FeatherIcon color={colors.text} size={18} name={passwordShow ? 'eye-off' : 'eye'} />
                     </TouchableOpacity>
                 }
             </View>
@@ -69,17 +99,14 @@ const CustomInput = (props) => {
 };
 
 const styles = StyleSheet.create({
-    
-    eyeIcon:{
-        position:'absolute',
-        height:54,
-        width:54,
-        alignItems:'center',
-        justifyContent:'center',
-        right:0,
-        zIndex:1,
-        top:0,
+    eyeIcon: {
+        position: 'absolute',
+        height: 54,
+        width: 54,
+        alignItems: 'center',
+        justifyContent: 'center',
+        right: 0,
+        zIndex: 1,
+        top: 0,
     }
 })
-
-export default CustomInput;
