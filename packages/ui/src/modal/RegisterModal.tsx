@@ -5,7 +5,7 @@ import MaterialIcon from "react-native-vector-icons/MaterialIcons";
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { useTheme } from '@react-navigation/native';
 import { COLORS, FONTS, SIZES } from '../@Interface/Style';
-import Button from '../Button/Button';
+import Button from '../Button';
 import CustomInput from '../Input/CustomInput';
 
 const RegisterModal = (props) => {
