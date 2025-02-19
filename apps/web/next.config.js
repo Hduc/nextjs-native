@@ -1,5 +1,6 @@
 module.exports = {
   reactStrictMode: true,
+  transpilePackages: ["hybrid-ui"],
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),

@@ -1,5 +1,5 @@
 {
-  "extends": "@hybrid-ui/nextjs.json",
+  "extends": "@hybrid-ui/typescript-config/nextjs.json",
   "compilerOptions": {
     "plugins": [{ "name": "next" }]
   },
