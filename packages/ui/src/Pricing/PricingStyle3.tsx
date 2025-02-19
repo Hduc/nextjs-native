@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { COLORS, FONTS, SIZES } from '../@Interface/Style';
-import Button from '../Button/Button';
+import Button from '../Button';
 
 interface PricingStyle3Props {
     price: string;

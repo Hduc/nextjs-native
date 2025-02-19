@@ -4,7 +4,7 @@ import FontAwesome from "react-native-vector-icons/FontAwesome";
 import FeatherIcon from 'react-native-vector-icons/Feather';
 import { useTheme } from '@react-navigation/native';
 import { COLORS, FONTS, SIZES } from '../@Interface/Style';
-import Button from '../Button/Button';
+import Button from '../Button';
 import CustomInput from '../Input/CustomInput';
 
 const LoginModal = (props) => {

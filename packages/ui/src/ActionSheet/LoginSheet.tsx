@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { useTheme } from '@react-navigation/native';
-import Button from '../Button/Button';
+import Button from '../Button';
 import { CustomInput } from '../Input/CustomInput';
 
 const LoginSheet = () => {
